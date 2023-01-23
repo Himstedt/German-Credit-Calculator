@@ -1,0 +1,12 @@
+<div class="form-group">
+      <label for="loan-amount">Loan Amount:</label>
+      <input type="number" id="loan-amount" name="loan-amount">
+
+      <label for="interest-rate">Interest Rate (%):</label>
+      <input type="number" id="interest-rate" name="interest-rate" step="0.01">
+
+
+      <label for="loan-term">Loan Term (in years):</label>
+      <input type="number" id="loan-term" name="loan-term">
+
+    <button type="button" id="calculate-btn">Calculate</button>

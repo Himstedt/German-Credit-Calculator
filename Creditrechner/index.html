@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="credit-calculator">
+  <h2>Credit Calculator</h2>
+  <div class="container">
+    <form class="form-group">
+      <div class="input-group">
+        <label for="loan-amount">Loan Amount:</label>
+        <input type="number" id="loan-amount" name="loan-amount">
+      </div>
+      <div class="input-group">
+       <div>
+        <label for="interest-rate">Interest Rate: </label>
+        <a id="interest-rate-value"></a>
+       </div>
+       <input type="range" min="0" max="20" value="5" class="slider" id="interest-rate" step="0.1">
+      </div>
+      <div class="input-group">
+        <label for="loan-term">Loan Term (in years):</label>
+        <input type="number" id="loan-term" name="loan-term">
+      </div>
+      <button type="button" id="calculate-btn">Calculate</button>
+    </form>
+    <div id="output">
+      <p class="MP">Monthly Payment: </p>
+      <span id="monthly-payment"></span>
+      <p>Total Interest: <span id="total-interest"></span></p>
+      <p>Total Payment: <span id="total-payment"></span></p>
+    </div>
+  </div>
+ </div>
+<script src="script.js"></script>
+</body>
+</html>
